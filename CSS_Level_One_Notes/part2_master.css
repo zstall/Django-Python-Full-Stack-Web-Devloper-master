@@ -1,0 +1,26 @@
+/* part2 css is focusing on spans and div */
+
+body {
+  background: url(background.png);
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+div {
+  background-color: black;
+}
+
+div p {
+  color: white;
+}
+
+p {
+  color: Black;
+}
+
+span {
+  border-width: 1px;
+  border-style: double;
+  border-color: Yellow;
+  color: yellow;
+}
