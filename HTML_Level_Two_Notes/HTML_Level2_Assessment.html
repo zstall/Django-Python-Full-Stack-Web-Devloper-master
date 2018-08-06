@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assessment Test Html</title>
+  </head>
+  <body>
+    <h1>Course Sign Up Page</h1>
+    <h4>Please Note: First Name, Last Name, Password, and Email are required</h4>
+
+    <!-- action allows form to launch thank you page -->
+    <form action="thankyou.html" method="get">
+      <!-- Grag the users first and last name, store them in name (might be value?) -->
+      <label for="fname">First Name: </label>
+      <input id="fname" type="text" name="user_fname" placeholder="First Name" required>
+      <label for="lname">Last Name: </label>
+      <input id="lname" type="text" name="user_lname" placeholder="Last Name" required>
+
+      <!-- way to start new line without css -->
+      <p></p>
+
+      <!-- get users email and password -->
+      <label for="useremail">Email: </label>
+      <input id="useremail" type="email" name="user_email" placeholder="user@email.com" required>
+      <label for="userpassword">Password: </label>
+      <input id=userpassword type="password" name="user_psswrd" placeholder="Enter Password"required>
+
+      <!-- radio button to find age, important that radios have same name -->
+      <h4>Are you over 18?</h4>
+      <label for="adult">Yes: </label>
+      <input id="adult" type="radio" name="user_age" value="">
+      <label for="teen">No: </label>
+      <input id="teen" type="radio" name="user_age" value="">
+
+      <!-- select is a drop down menue, value is where selection is stored for backend -->
+      <h4>Do you have a Credit Card or PayPal?</h4>
+      <select name="pay">
+        <option value="cc">Credit Cart</option>
+        <option value="pp">PayPal</option>
+        <option value="none">None</option>
+      </select>
+
+      <!-- Button to submit form -->
+      <input type="submit" name="" value="Sign Up">
+
+
+    </form>
+
+  </body>
+</html>
