@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  background-color: #000040;
+  border: 75px solid #21cbc8;
+  border-top: 0;
+  color: white;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+
+}
+
+.header {
+  margin-bottom: 100px;
+}
+
+p {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+
+}
+
+label {
+  padding-top: 25px;
+}
+
+.btn {
+  width: 150px;
+  margin: 25px;
+  padding: 25px;
+  background-color: #FF9F1c;
+  border-radius: 25px;
+  font-size: .50em;
+}
+form {
+  font-size: 1.25em;
+}

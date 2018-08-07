@@ -1,0 +1,16 @@
+
+/* making all list items red */
+li {
+  color:red;
+}
+
+/* This is to show that classes take a higher priority than tags. So even though
+li items are color:red, any li items that have the class topitems will be blue*/
+.topitems{
+  color:blue;
+}
+
+/* calling and Id takes a higher priority than class or element tags. */
+#two {
+  color: Green;
+}

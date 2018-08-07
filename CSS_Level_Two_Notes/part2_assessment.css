@@ -1,0 +1,34 @@
+h1 {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+.spectrum {
+  margin:auto;
+}
+
+.spectrum td {
+  height: 350px;
+  width: 175px;
+  border: 5px solid white;
+
+}
+
+#one {
+  background-color: #6eeb83;
+  margin 5px;
+}
+
+#two {
+  background-color: #e4ff1a;
+  margin 5px;
+}
+#three {
+  background-color: #1be7ff;
+}
+#four {
+  background-color: #e8aa14;
+}
+#five {
+  background-color: #ff5714;
+}

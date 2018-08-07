@@ -1,0 +1,29 @@
+
+h1 {
+  font-family: "Arial";
+}
+
+p {
+  font-family: monospace;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Default text size is 16px, so 1em = 16px. or 2em = 32px... It is common
+to change the defualt font size however to manipulate the em's */
+body {
+  font-size: 20px;
+}
+
+/* So now our em is different. 1em = 20px and 2em = 40px. em's depends on parent. */
+#two {
+  font-size: 2.0em;
+}
+
+/* you should use em's to vary the size of two of the same elements that you want
+different sizes. You should never use an em to get one element to have the
+same size as another. */
+
+h1 {
+  text-align: center;
+}
