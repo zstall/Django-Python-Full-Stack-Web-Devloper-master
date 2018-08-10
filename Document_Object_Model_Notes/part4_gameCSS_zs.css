@@ -1,0 +1,10 @@
+/* Main css */
+
+/* Styling for squares in the table */
+td {
+  border: 5px solid black;
+  height: 150px;
+  text-align: center;
+  width: 150px;
+  font-size: 100px;
+}
