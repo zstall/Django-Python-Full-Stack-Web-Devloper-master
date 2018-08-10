@@ -3,8 +3,8 @@
 /* Styling for squares in the table */
 td {
   border: 5px solid black;
+  font-size: 100px;
   height: 150px;
   text-align: center;
   width: 150px;
-  font-size: 100px;
 }

@@ -1,7 +1,7 @@
 // main js
 
 // Createa a variable for the restart button
-var restart = document.querySelector("#btn");
+var restart = document.querySelector("#rButtionA");
 // create an array of the "sqaures"
 var squares = document.querySelectorAll("td");
 
