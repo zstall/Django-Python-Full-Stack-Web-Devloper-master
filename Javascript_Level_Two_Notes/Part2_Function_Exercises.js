@@ -24,14 +24,8 @@
 // sleepIn(false, true) → true
 
 function sleepIn(weekday, vacation) {
-    if (!weekday || vacation) {
-      return true;
-    }else {
-      return false;
-    }
+    return (!weekday || vacation);
 }
-
-
 //
 // PROBLEM 2: MONKEY TROUBLE
 //
@@ -46,13 +40,8 @@ function sleepIn(weekday, vacation) {
 // monkeyTrouble(true, false) → false
 
 function monkeyTrouble(aSmile, bSmile) {
-  if (aSmile != bSmile) {
-    return false;
-  } else {
-    return true;
-  }
+  return (aSmile == bSmile);
 }
-
 
 //
 // PROBLEM 3: STRING TIMES
@@ -90,13 +79,13 @@ function stringTimes(str, n) {
 
 function luckySum(a, b, c){
   if (a === 13) {
-    return c;
+    return 0;
   }else if (b === 13) {
     return a;
   }else if (c === 13) {
-    return (a + b)
+    return (a + b);
   }else {
-    return(a+b+c)
+    return(a+b+c);
   }
 }
 
@@ -122,12 +111,13 @@ function caught_speeding(speed, is_birthday){
   var  ticket = 0;
 
   if (speed<61) {
-    return ticket;
+    return 0;
   }else if (speed>=61 && speed<=80) {
-    return (ticket+1);
+    ticket+=1;
   }else {
-    return (ticket+2);
+    ticket+=2;
   }
+  return ticket;
 }
 
 
@@ -145,5 +135,18 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 2, 10) → true
 
 function makeBricks(small, big, goal){
-  return((goal%(small+big))==0);
+  return((small+(5*big)>=goal)&&(small>=(goal%5)))
+
+  // below is my first attempt, the above is basically the same if statements but
+  // made into one line!!!
+  // var total = 0;
+  // var remainder = 0;
+  //
+  // total = small + (5 * big);
+  // if (total<goal) {
+  //   return false;
+  // } else {
+  //   remainder = goal%5;
+  //   return(small>=remainder);
+  // }
 }
