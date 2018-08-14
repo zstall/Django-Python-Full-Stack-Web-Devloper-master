@@ -22,22 +22,7 @@
 # stringBits('Heeololeo')
 
 
-#
-# def end_other(a, b):
-#     str = ""
-#     if len(a) >= len(b):
-#         print(b.lower() in (a[-len(b):].lower()))
-#         return(b.lower() in (a[-len(b):].lower()))
-#     else:
-#         print(a.lower() in (b[-len(a):].lower()))
-#         return(a.lower() in (b[-len(a):].lower()))
-#
-# end_other('Hiabc', 'abc')
-# end_other('AbC', 'HiaBc')
-# end_other('abc', 'abXabc')
-# end_other('ab', 'abXXXiiii')
-# # end_other('a;ldkfa', 'fa')
-#
+
 #
 # def doubleChar(str):
 #     nStr=""
@@ -74,28 +59,36 @@
 
 # count_evens([2, 1, 2, 3, 4]) → 3
 # count_evens([2, 2, 0]) → 3
-# count_evens([1, 3, 5]) → 0
+#  count_evens([1, 3, 5]) → 0
+#
+# def count_evens(nums):
+#     evens = filter(even_nums, nums)
+#     print(len(list(evens)))
+#     return(len(list(evens)))
+#
+# def even_nums(n):
+#     return n%2 == 0
+#
+#
+# count_evens([2,1,2,3,4])
+# count_evens([2,2,0])
+# count_evens([1,3,5])
+#
+#
+#
+# def count_evens_two(nums):
+#     evens = filter(lambda n:n%2 == 0, nums)
+#     print(len(list(evens)))
+#     return(len(list(evens)))
+#
+# count_evens_two([2,1,2,3,4])
+# count_evens_two([2,2,0])
+# count_evens_two([1,3,5])
 
-def count_evens(nums):
-    evens = filter(even_nums, nums)
-    print(len(list(evens)))
-    return(len(list(evens)))
 
-def even_nums(n):
-    return n%2 == 0
-
-
-count_evens([2,1,2,3,4])
-count_evens([2,2,0])
-count_evens([1,3,5])
-
-
-
-def count_evens_two(nums):
-    evens = filter(lambda n:n%2 == 0, nums)
-    print(len(list(evens)))
-    return(len(list(evens)))
-
-count_evens_two([2,1,2,3,4])
-count_evens_two([2,2,0])
-count_evens_two([1,3,5])
+b = 3456
+l = str(b)
+i = 0
+while i < len(l):
+    print(l[i])
+    i += 1

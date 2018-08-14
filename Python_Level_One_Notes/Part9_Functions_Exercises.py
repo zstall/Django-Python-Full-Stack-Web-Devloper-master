@@ -26,11 +26,10 @@ def arrayCheck(nums):
     Function will return if 1,2,3 is anywhere in the list
     """
     n = 0
-    while n < (len(nums)-2):
+    for i in range(len(nums)-2):
         if nums[n]==1 and nums[n+1]==2 and nums[n+2]==3:
             print("True")
             return True
-        n += 1
     print("False")
     return False
 
@@ -87,13 +86,8 @@ def end_other(a, b):
     Given two strings, will return if one string is at the end of the other.
     NOT CASE SENSITIVE
     """
-    if len(a) >= len(b):
-        print(b.lower() in (a[-len(b):].lower()))
-        return(b.lower() in (a[-len(b):].lower()))
-    else:
-        print(a.lower() in (b[-len(a):].lower()))
-        return(a.lower() in (b[-len(a):].lower()))
-
+    print((b.lower() in (a[-len(b):].lower())) or (a.lower() in (b[-len(a):].lower())))
+    return((b.lower() in (a[-len(b):].lower())) or (a.lower() in (b[-len(a):].lower())))
 
 #####################
 ## -- PROBLEM 4 -- ##
