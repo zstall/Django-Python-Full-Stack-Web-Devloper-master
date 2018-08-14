@@ -108,13 +108,13 @@ def rank_cards(card1, card2):
     if card1[1] == card2[1]:
         return True
     elif RANKS.index(card1[1]) < RANKS.index(card2[1]):
-        return False
-        print(user.name+" has the higher card, adding to hand.")
+        print(user.name+" Has wond this round. Computer lost")
         user.hand.add(table_cards)
-    else:
         return False
-        print(comp.name+" has the higher card, adding to hand.")
+    else:
+        print(user.name+" Has lost this round, Computer has one.")
         comp.hand.add(table_cards)
+        return False
 
 ######################
 #### GAME PLAY #######
@@ -132,7 +132,7 @@ half1,half2 = d.split_deck()
 
 comp = Player("Computer", Hand(half1))
 p1 = input("Please enter your name: ")
-user = Player(p1, Hand(half2))
+user = Player(str(p1), Hand(half2))
 # print(comp.hand.cards)
 # print(user.hand.cards)
 
