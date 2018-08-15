@@ -1,3 +1,7 @@
+import mymodule
+
+mymodule.func_in_mymodule()
+
 ################
 # Example Three:
 ################
