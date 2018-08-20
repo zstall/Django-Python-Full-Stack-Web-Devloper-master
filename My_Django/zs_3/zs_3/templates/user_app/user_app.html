@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>User Page: users in construction!</h1>
+      </div>
+      {% if acc_records %}
+      <table class="table">
+        <thead>
+          <th>Name</th>
+          <th>Email</th>
+        </thead>
+
+        {% for acc in acc_records %}
+        <tr>
+          <td>{{acc.person}}</td>
+          <td>{{acc.u_email}}</td>
+        </tr>
+        {% endfor %}
+
+      </table>
+      {% else %}
+      <p>NO ACCESS RECORDS FOUND</p>
+      {% endif %}
+
+    </div>
+
+
+  </body>
+</html>
