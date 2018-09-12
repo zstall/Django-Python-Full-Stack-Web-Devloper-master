@@ -1,0 +1,55 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{% load staticfiles %}
+<div class="container">
+  <h1>About Me</h1>
+</div>
+<div class="container" >
+  <div class="row">
+    <div class="col-md-8">
+        <div class="jumbotron">
+          <h2>Zachary Stall - Developer/Programmer/Educator</h2>
+        	<p>Highly motivated, focused, and detail-oriented professional eager to
+          learn and make an impact. Guided by a passion for computers,
+          problem-solving, and education; driven toward technology, programming,
+          or related concentrations. <br><br>
+        	Programming languages/framworks I am familiar with are Java, Python, SQL, HTML5,
+          PHP, Django, and CSS. <br><br>
+        	Technology I have worked with is Atom, Sublime 3, NetSuite, DreamWeaver,
+          Camtasia, Active Direcotry, and Lectora. <br><br>
+        	Through coursework, I have studied several different sorting
+          algorithms, implemented recursive methods, and completed projects using
+          linked lists, hash mapping, and reading and writing to files. In my
+          current position, I have developed SCORM compliant courses and added
+          content to our LMS using Lectora, PHP, and HTML. Managed vendor landing
+          pages at
+          <a href="https://www.psaeducation.com" target="_blank">PSAEducation.com</a>
+          using DreamWeaver. Created online tutorials with Techsmith Camtasia
+          on how to navigate our compnay online store. Below are links to work
+          and projects I have worked on. Click on the titles of the projects to
+          view GitHub repositories, or go directly to my
+          <a style="text-decoration: underline;" href="https://github.com/zstall"
+          target="_blank">GitHub</a>
+          For more information, please contact me.
+          <a href="mailto: zstall4@gmail.com">zstall4@gmail.com</a><br><br><br><br><br>
+          </p>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img class="img-responsive" src="{% static "aboutme01.jpg" %}" alt="Picture not loading">
+      </div>
+      <div class="thumbnail">
+        <img class="img-responsive" src="{% static "aboutme02.jpg" %}" alt="Picture not loading">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <h2>Zachary Stall Resume</h2>
+      <embed src="{% static "resume.pdf" %}"  type="application/pdf" width="100%" height="600px">
+    <br><br>
+  </div>
+</div>
+
+
+{% endblock %}
