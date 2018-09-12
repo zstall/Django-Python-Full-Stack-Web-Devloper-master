@@ -24,6 +24,16 @@
   <div class="container">
     {% for comment in post.comments.all %}
     <br>
+
+
+      {% if user.is_authenticated and comment.approved_comment %}
+      <hr>
+      <a class="btn btn-danger btn-xs btn-comment" href="{% url 'comment_remove' pk=comment.pk %}">
+        <span class="glyphicon glyphicon-remove" ></span>
+      </a>
+      {% endif %}
+
+
       {% if user.is_authenticated or comment.approved_comment %}
         {{comment.created_date}}
           {% if not comment.approved_comment %}
