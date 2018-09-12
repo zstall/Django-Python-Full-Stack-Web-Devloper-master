@@ -1,0 +1,88 @@
+{% extends "blog/base.html" %}
+{% block content %}
+{% load staticfiles %}
+  <h1>About Me</h1>
+  <div class="container">
+    <main class="pcbuildsmain">
+  		<div class="pcbuildsrow">
+  			<div class="pcbuildsleftcolumn">
+  				<!-- Build 0: Most recent build... LOVE IT! -->
+  				<div class="pcbuildscard">
+            <a name="pcbuilds_top"></a>
+  					<h2>|Zero|</h2>
+  					<h4>This is my most recent build, and daily driver.</h4>
+  					<div class="jumbotron">
+              <img class="img-thumbnail img-responsive" src="{% static "az/az02.jpg" %}" alt="">
+            </div>
+  					<h4>This is my latest build and my daily driver. I game and work on this PC. I had a hard time deciding cases. Sometimes I wish I would have went with a micro or mini itx build. But the corsair 460x s a beautiful case. I wasn't sold on it until I saw it in person. I tried to get everything I could in black, allowing me to change the color scheme using RGB LED's. In my next build, I have a plan/idea to do a all black, with no lighting (or at least very little). More detailed list, and area to leave comments at <a href="pcpartpicker.com" alt="">|Zero|</a><br>Here is the parts list is:</h4>
+  					<ul class="pcbuildsul">
+  						<li>CPU: I7 - 8700K OC to 4.5GHz</li><br>
+  						<li>CPU Cooler: NZXT - Kraken X52</li><br>
+  						<li>Mobo: MSI - Z370 Gaming PRO Carbon</li><br>
+  						<li>Memory: Corsair Vengaeance LPX 16GB</li><br>
+  						<li>Storage01: Samsung - 960 Evo 250GB (OS)</li><br>
+  						<li>Storage02: Intel - 730 Series 240GB 2.5" solid State Drive</li><br>
+  						<li>Storage03: Western Digital - Cavier Blue 1TB</li><br>
+  						<li>Storage04: Seagate - Barracuda 3TB</li><br>
+  						<li>GPU: EVGA GTX 1070 8GB FTW Gaming ACX 3.0</li><br>
+  						<li>Case: Corsair - Crystal 460X RGB</li><br>
+  						<li>PSU: Corsair = 760W 80+ Platinum Certified Fully-Modular ATX Power Suply</li><br>
+  						<li><a href="{% url 'about' %}">Back to Top</a></li><br>
+  					</ul>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <!-- Return to https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_img_thumbnail2&stacked=h and create views to click for larger images -->
+                    <img src="{% static "az/az01.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="{% static "az/az03.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="{% static "az/az05.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="{% static "az/az07.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="{% static "az/az07.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="{% static "az/az04.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="{% static "az/az06.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail">
+                    <img src="{% static "az/az08.jpg" %}" alt="Picture not loading">
+                  </div>
+                </div>
+              </div>
+            </div>
+  				</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+
+
+{% endblock %}
